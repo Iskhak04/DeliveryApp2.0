@@ -13,6 +13,7 @@
 		3231A2392928B65400505D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A2372928B65400505D05 /* Main.storyboard */; };
 		3231A23B2928B65400505D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3231A23A2928B65400505D05 /* Assets.xcassets */; };
 		3231A23E2928B65400505D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A23C2928B65400505D05 /* LaunchScreen.storyboard */; };
+		32C0D1942928E04B00400EA9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0D1932928E04A00400EA9 /* MainTabBarController.swift */; };
 		32F10B262928B908007B6722 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B252928B908007B6722 /* SignInViewController.swift */; };
 		32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */; };
 		32F10B2A2928C3C7007B6722 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B292928C3C7007B6722 /* SignUpViewController.swift */; };
@@ -33,6 +34,7 @@
 		3231A23A2928B65400505D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3231A23D2928B65400505D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3231A23F2928B65400505D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32C0D1932928E04A00400EA9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		32F10B252928B908007B6722 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		32F10B292928C3C7007B6722 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				32F10B242928B8F2007B6722 /* Storyboards */,
 				32F10B2F2928C4AB007B6722 /* Auth */,
+				32C0D1932928E04A00400EA9 /* MainTabBarController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				32F10B332928C917007B6722 /* SignUpModel.swift in Sources */,
 				32F10B2C2928C41B007B6722 /* SignInViewModel.swift in Sources */,
 				32F10B392928D3D6007B6722 /* UserData.swift in Sources */,
+				32C0D1942928E04B00400EA9 /* MainTabBarController.swift in Sources */,
 				32F10B2E2928C454007B6722 /* SignInModel.swift in Sources */,
 				32F10B352928CD6D007B6722 /* ForgotPasswordViewModel.swift in Sources */,
 				3231A2342928B65400505D05 /* SceneDelegate.swift in Sources */,

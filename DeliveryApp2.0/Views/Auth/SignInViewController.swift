@@ -140,7 +140,8 @@ class SignInViewController: UIViewController {
         
         viewModel.statusVM.subscribe(onNext: {
             if $0 == true {
-                self.showAlert()
+                let mainTabBarC = MainTabBarController()
+                self.navigationController?.viewControllers.append(mainTabBarC)
             }
         }).disposed(by: bag)
         
