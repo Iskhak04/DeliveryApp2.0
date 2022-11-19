@@ -20,6 +20,8 @@
 		32F10B2E2928C454007B6722 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B2D2928C454007B6722 /* SignInModel.swift */; };
 		32F10B312928C8FE007B6722 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B302928C8FE007B6722 /* SignUpViewModel.swift */; };
 		32F10B332928C917007B6722 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B322928C917007B6722 /* SignUpModel.swift */; };
+		32F10B352928CD6D007B6722 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B342928CD6D007B6722 /* ForgotPasswordViewModel.swift */; };
+		32F10B372928CDAA007B6722 /* ForgotPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B362928CDAA007B6722 /* ForgotPasswordModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		32F10B2D2928C454007B6722 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		32F10B302928C8FE007B6722 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		32F10B322928C917007B6722 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		32F10B342928CD6D007B6722 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		32F10B362928CDAA007B6722 /* ForgotPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordModel.swift; sourceTree = "<group>"; };
 		ABF08D4A71E51EEEDC2A524B /* Pods-DeliveryApp2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryApp2.0.release.xcconfig"; path = "Target Support Files/Pods-DeliveryApp2.0/Pods-DeliveryApp2.0.release.xcconfig"; sourceTree = "<group>"; };
 		C25BAB44EA5BD04544BE4CF6 /* Pods-DeliveryApp2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryApp2.0.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryApp2.0/Pods-DeliveryApp2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		E1267F54E7EF48C44A6ABF75 /* Pods_DeliveryApp2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryApp2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +93,7 @@
 			children = (
 				32F10B2B2928C41B007B6722 /* SignInViewModel.swift */,
 				32F10B302928C8FE007B6722 /* SignUpViewModel.swift */,
+				32F10B342928CD6D007B6722 /* ForgotPasswordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			children = (
 				32F10B2D2928C454007B6722 /* SignInModel.swift */,
 				32F10B322928C917007B6722 /* SignUpModel.swift */,
+				32F10B362928CDAA007B6722 /* ForgotPasswordModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,9 +281,11 @@
 				32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */,
 				3231A2322928B65400505D05 /* AppDelegate.swift in Sources */,
 				32F10B312928C8FE007B6722 /* SignUpViewModel.swift in Sources */,
+				32F10B372928CDAA007B6722 /* ForgotPasswordModel.swift in Sources */,
 				32F10B332928C917007B6722 /* SignUpModel.swift in Sources */,
 				32F10B2C2928C41B007B6722 /* SignInViewModel.swift in Sources */,
 				32F10B2E2928C454007B6722 /* SignInModel.swift in Sources */,
+				32F10B352928CD6D007B6722 /* ForgotPasswordViewModel.swift in Sources */,
 				3231A2342928B65400505D05 /* SceneDelegate.swift in Sources */,
 				32F10B262928B908007B6722 /* SignInViewController.swift in Sources */,
 				32F10B2A2928C3C7007B6722 /* SignUpViewController.swift in Sources */,
