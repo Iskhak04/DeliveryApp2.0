@@ -129,7 +129,18 @@ class SignUpViewController: UIViewController {
     }
     
     @objc func signUpButtonClicked() {
+        guard let email = emailTextField.text, let password = passwordTextField.text, let password2 = password2TextField.text, !email.isEmpty, !password.isEmpty, password == password2 else { return }
         
+        viewModel.userDataVM.onNext((email, password))
+        
+        showAlert()
+    }
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "Success", message: "You successfully signed up!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
     
     private func layout() {

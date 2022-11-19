@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ForgotPasswordViewController: UIViewController {
+    
+    let bag = DisposeBag()
     
     private let viewModel = ForgotPaswordViewModel()
     
@@ -67,7 +71,20 @@ class ForgotPasswordViewController: UIViewController {
     }
     
     @objc func confirmButtonClicked() {
+        guard let email = emailTextField.text, !email.isEmpty else { return }
         
+        viewModel.passwordVM.subscribe(onNext: {
+            self.showAlert(password: $0)
+        }).disposed(by: bag)
+        
+        viewModel.emailVM.onNext(email)
+    }
+    
+    private func showAlert(password: String) {
+        let alert = UIAlertController(title: "Success", message: "Your password is \(password)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
     
     private func layout() {

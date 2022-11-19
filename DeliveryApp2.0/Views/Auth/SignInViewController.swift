@@ -12,6 +12,8 @@ import RxCocoa
 
 class SignInViewController: UIViewController {
     
+    let bag = DisposeBag()
+    
     private let viewModel = SignInViewModel()
     
     private lazy var mainImageView: UIImageView = {
@@ -122,13 +124,35 @@ class SignInViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        emailTextField.text = ""
+        passwordTextField.text = ""
+    }
+    
     @objc func forgotPasswordButtonClicked() {
         let forgotPasswordVC = ForgotPasswordViewController()
         navigationController?.pushViewController(forgotPasswordVC, animated: true)
     }
     
     @objc func signInButtonClicked() {
+        guard let email = emailTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty else { return }
         
+        viewModel.statusVM.subscribe(onNext: {
+            if $0 == true {
+                self.showAlert()
+            }
+        }).disposed(by: bag)
+        
+        viewModel.userDataVM.onNext((email, password))
+        
+    }
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "Success", message: "You successfully signed in!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
     
     @objc func signUpButtonClicked() {

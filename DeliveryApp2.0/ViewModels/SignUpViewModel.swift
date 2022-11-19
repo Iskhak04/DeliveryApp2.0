@@ -15,9 +15,14 @@ class SignUpViewModel: NSObject {
     
     let model = SignUpModel()
     
+    var userDataVM = PublishSubject<(String, String)>()
+    
     override init() {
         super.init()
         
+        userDataVM.subscribe(onNext: {
+            self.model.userDataM.onNext($0)
+        }).disposed(by: bag)
         
     }
 }

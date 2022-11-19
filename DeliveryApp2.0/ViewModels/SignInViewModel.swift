@@ -15,9 +15,19 @@ class SignInViewModel: NSObject {
     
     let model = SignInModel()
     
+    var userDataVM = PublishSubject<(String, String)>()
+    var statusVM = PublishSubject<Bool>()
+    
     override init() {
         super.init()
         
+        model.statusM.subscribe(onNext: {
+            self.statusVM.onNext($0)
+        }).disposed(by: bag)
+        
+        userDataVM.subscribe(onNext: {
+            self.model.userDataM.onNext($0)
+        }).disposed(by: bag)
         
     }
 }
