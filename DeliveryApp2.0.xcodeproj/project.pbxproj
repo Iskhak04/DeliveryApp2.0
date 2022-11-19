@@ -10,21 +10,29 @@
 		1184C91716FEA8A266A8B2C1 /* Pods_DeliveryApp2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1267F54E7EF48C44A6ABF75 /* Pods_DeliveryApp2_0.framework */; };
 		3231A2322928B65400505D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231A2312928B65400505D05 /* AppDelegate.swift */; };
 		3231A2342928B65400505D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231A2332928B65400505D05 /* SceneDelegate.swift */; };
-		3231A2362928B65400505D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231A2352928B65400505D05 /* ViewController.swift */; };
 		3231A2392928B65400505D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A2372928B65400505D05 /* Main.storyboard */; };
 		3231A23B2928B65400505D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3231A23A2928B65400505D05 /* Assets.xcassets */; };
 		3231A23E2928B65400505D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A23C2928B65400505D05 /* LaunchScreen.storyboard */; };
+		32F10B262928B908007B6722 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B252928B908007B6722 /* SignInViewController.swift */; };
+		32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */; };
+		32F10B2A2928C3C7007B6722 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B292928C3C7007B6722 /* SignUpViewController.swift */; };
+		32F10B2C2928C41B007B6722 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B2B2928C41B007B6722 /* SignInViewModel.swift */; };
+		32F10B2E2928C454007B6722 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B2D2928C454007B6722 /* SignInModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3231A22E2928B65400505D05 /* DeliveryApp2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3231A2312928B65400505D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3231A2332928B65400505D05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3231A2352928B65400505D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3231A2382928B65400505D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3231A23A2928B65400505D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3231A23D2928B65400505D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3231A23F2928B65400505D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F10B252928B908007B6722 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		32F10B292928C3C7007B6722 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		32F10B2B2928C41B007B6722 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		32F10B2D2928C454007B6722 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		ABF08D4A71E51EEEDC2A524B /* Pods-DeliveryApp2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryApp2.0.release.xcconfig"; path = "Target Support Files/Pods-DeliveryApp2.0/Pods-DeliveryApp2.0.release.xcconfig"; sourceTree = "<group>"; };
 		C25BAB44EA5BD04544BE4CF6 /* Pods-DeliveryApp2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryApp2.0.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryApp2.0/Pods-DeliveryApp2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		E1267F54E7EF48C44A6ABF75 /* Pods_DeliveryApp2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryApp2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,15 +71,67 @@
 		3231A2302928B65400505D05 /* DeliveryApp2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				3231A2312928B65400505D05 /* AppDelegate.swift */,
-				3231A2332928B65400505D05 /* SceneDelegate.swift */,
-				3231A2352928B65400505D05 /* ViewController.swift */,
-				3231A2372928B65400505D05 /* Main.storyboard */,
-				3231A23A2928B65400505D05 /* Assets.xcassets */,
-				3231A23C2928B65400505D05 /* LaunchScreen.storyboard */,
+				32F10B232928B8DF007B6722 /* Other */,
+				32F10B222928B8D8007B6722 /* Models */,
+				32F10B212928B8D3007B6722 /* Views */,
+				32F10B202928B8CC007B6722 /* ViewModels */,
 				3231A23F2928B65400505D05 /* Info.plist */,
 			);
 			path = DeliveryApp2.0;
+			sourceTree = "<group>";
+		};
+		32F10B202928B8CC007B6722 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				32F10B2B2928C41B007B6722 /* SignInViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		32F10B212928B8D3007B6722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32F10B242928B8F2007B6722 /* Storyboards */,
+				32F10B2F2928C4AB007B6722 /* Auth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32F10B222928B8D8007B6722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32F10B2D2928C454007B6722 /* SignInModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32F10B232928B8DF007B6722 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3231A2312928B65400505D05 /* AppDelegate.swift */,
+				3231A2332928B65400505D05 /* SceneDelegate.swift */,
+				3231A23A2928B65400505D05 /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		32F10B242928B8F2007B6722 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3231A2372928B65400505D05 /* Main.storyboard */,
+				3231A23C2928B65400505D05 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32F10B2F2928C4AB007B6722 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				32F10B252928B908007B6722 /* SignInViewController.swift */,
+				32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */,
+				32F10B292928C3C7007B6722 /* SignUpViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		4EE6F308F0B64B94B5D36FF5 /* Pods */ = {
@@ -80,7 +140,6 @@
 				C25BAB44EA5BD04544BE4CF6 /* Pods-DeliveryApp2.0.debug.xcconfig */,
 				ABF08D4A71E51EEEDC2A524B /* Pods-DeliveryApp2.0.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3231A2362928B65400505D05 /* ViewController.swift in Sources */,
+				32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */,
 				3231A2322928B65400505D05 /* AppDelegate.swift in Sources */,
+				32F10B2C2928C41B007B6722 /* SignInViewModel.swift in Sources */,
+				32F10B2E2928C454007B6722 /* SignInModel.swift in Sources */,
 				3231A2342928B65400505D05 /* SceneDelegate.swift in Sources */,
+				32F10B262928B908007B6722 /* SignInViewController.swift in Sources */,
+				32F10B2A2928C3C7007B6722 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
