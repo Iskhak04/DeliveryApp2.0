@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1184C91716FEA8A266A8B2C1 /* Pods_DeliveryApp2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1267F54E7EF48C44A6ABF75 /* Pods_DeliveryApp2_0.framework */; };
+		322DB9332929F9CE009F6B12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9322929F9CE009F6B12 /* HomeViewController.swift */; };
+		322DB9352929F9E2009F6B12 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9342929F9E2009F6B12 /* HistoryViewController.swift */; };
+		322DB9372929F9F0009F6B12 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9362929F9F0009F6B12 /* CreateOrderViewController.swift */; };
+		322DB9392929FA03009F6B12 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9382929FA03009F6B12 /* ChatsViewController.swift */; };
+		322DB93B2929FA2A009F6B12 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB93A2929FA2A009F6B12 /* ContactsViewController.swift */; };
 		3231A2322928B65400505D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231A2312928B65400505D05 /* AppDelegate.swift */; };
 		3231A2342928B65400505D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231A2332928B65400505D05 /* SceneDelegate.swift */; };
 		3231A2392928B65400505D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A2372928B65400505D05 /* Main.storyboard */; };
@@ -27,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322DB9322929F9CE009F6B12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		322DB9342929F9E2009F6B12 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		322DB9362929F9F0009F6B12 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
+		322DB9382929FA03009F6B12 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		322DB93A2929FA2A009F6B12 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		3231A22E2928B65400505D05 /* DeliveryApp2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3231A2312928B65400505D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3231A2332928B65400505D05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +118,11 @@
 				32F10B242928B8F2007B6722 /* Storyboards */,
 				32F10B2F2928C4AB007B6722 /* Auth */,
 				32C0D1932928E04A00400EA9 /* MainTabBarController.swift */,
+				322DB9322929F9CE009F6B12 /* HomeViewController.swift */,
+				322DB9342929F9E2009F6B12 /* HistoryViewController.swift */,
+				322DB9362929F9F0009F6B12 /* CreateOrderViewController.swift */,
+				322DB9382929FA03009F6B12 /* ChatsViewController.swift */,
+				322DB93A2929FA2A009F6B12 /* ContactsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,10 +302,15 @@
 				32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */,
 				3231A2322928B65400505D05 /* AppDelegate.swift in Sources */,
 				32F10B312928C8FE007B6722 /* SignUpViewModel.swift in Sources */,
+				322DB9352929F9E2009F6B12 /* HistoryViewController.swift in Sources */,
 				32F10B372928CDAA007B6722 /* ForgotPasswordModel.swift in Sources */,
+				322DB93B2929FA2A009F6B12 /* ContactsViewController.swift in Sources */,
 				32F10B332928C917007B6722 /* SignUpModel.swift in Sources */,
+				322DB9332929F9CE009F6B12 /* HomeViewController.swift in Sources */,
 				32F10B2C2928C41B007B6722 /* SignInViewModel.swift in Sources */,
 				32F10B392928D3D6007B6722 /* UserData.swift in Sources */,
+				322DB9392929FA03009F6B12 /* ChatsViewController.swift in Sources */,
+				322DB9372929F9F0009F6B12 /* CreateOrderViewController.swift in Sources */,
 				32C0D1942928E04B00400EA9 /* MainTabBarController.swift in Sources */,
 				32F10B2E2928C454007B6722 /* SignInModel.swift in Sources */,
 				32F10B352928CD6D007B6722 /* ForgotPasswordViewModel.swift in Sources */,
