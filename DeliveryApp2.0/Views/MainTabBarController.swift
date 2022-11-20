@@ -12,8 +12,21 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        view.tintColor = .label
+        addVCs()
     }
     
+    private func addVCs() {
+        viewControllers = [setupVCs(viewController: HomeViewController(), imageName: "house"),
+                           setupVCs(viewController: HistoryViewController(), imageName: "clock.arrow.circlepath"),
+                           setupVCs(viewController: CreateOrderViewController(), imageName: "plus.square"),
+                           setupVCs(viewController: ChatsViewController(), imageName: "ellipsis.message"),
+                           setupVCs(viewController: ContactsViewController(), imageName: "person")]
+    }
     
+    private func setupVCs(viewController: UIViewController, imageName: String) -> UIViewController {
+        viewController.tabBarItem.image = UIImage(systemName: imageName)
+        return viewController
+    }
 }
