@@ -13,6 +13,7 @@
 		322DB9372929F9F0009F6B12 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9362929F9F0009F6B12 /* CreateOrderViewController.swift */; };
 		322DB9392929FA03009F6B12 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9382929FA03009F6B12 /* ChatsViewController.swift */; };
 		322DB93B2929FA2A009F6B12 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB93A2929FA2A009F6B12 /* ContactsViewController.swift */; };
+		322DB93E292A007D009F6B12 /* OrderDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322DB93C292A007D009F6B12 /* OrderDB.xcdatamodeld */; };
 		3231A2322928B65400505D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231A2312928B65400505D05 /* AppDelegate.swift */; };
 		3231A2342928B65400505D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3231A2332928B65400505D05 /* SceneDelegate.swift */; };
 		3231A2392928B65400505D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A2372928B65400505D05 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		322DB9362929F9F0009F6B12 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
 		322DB9382929FA03009F6B12 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		322DB93A2929FA2A009F6B12 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		322DB93D292A007D009F6B12 /* OrderDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrderDB.xcdatamodel; sourceTree = "<group>"; };
 		3231A22E2928B65400505D05 /* DeliveryApp2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3231A2312928B65400505D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3231A2332928B65400505D05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				32F10B212928B8D3007B6722 /* Views */,
 				32F10B202928B8CC007B6722 /* ViewModels */,
 				3231A23F2928B65400505D05 /* Info.plist */,
+				322DB93C292A007D009F6B12 /* OrderDB.xcdatamodeld */,
 			);
 			path = DeliveryApp2.0;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322DB93E292A007D009F6B12 /* OrderDB.xcdatamodeld in Sources */,
 				32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */,
 				3231A2322928B65400505D05 /* AppDelegate.swift in Sources */,
 				32F10B312928C8FE007B6722 /* SignUpViewModel.swift in Sources */,
@@ -536,6 +540,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		322DB93C292A007D009F6B12 /* OrderDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				322DB93D292A007D009F6B12 /* OrderDB.xcdatamodel */,
+			);
+			currentVersion = 322DB93D292A007D009F6B12 /* OrderDB.xcdatamodel */;
+			path = OrderDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3231A2262928B65400505D05 /* Project object */;
 }
