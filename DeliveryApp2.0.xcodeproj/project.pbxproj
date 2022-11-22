@@ -22,6 +22,9 @@
 		3231A2392928B65400505D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A2372928B65400505D05 /* Main.storyboard */; };
 		3231A23B2928B65400505D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3231A23A2928B65400505D05 /* Assets.xcassets */; };
 		3231A23E2928B65400505D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3231A23C2928B65400505D05 /* LaunchScreen.storyboard */; };
+		323D4DE0292CF782006B730B /* CreateOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D4DDF292CF782006B730B /* CreateOrderViewModel.swift */; };
+		323D4DE2292CF794006B730B /* CreateOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D4DE1292CF794006B730B /* CreateOrderModel.swift */; };
+		323D4DE4292CF7D0006B730B /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D4DE3292CF7D0006B730B /* OrderModel.swift */; };
 		32C0D1942928E04B00400EA9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0D1932928E04A00400EA9 /* MainTabBarController.swift */; };
 		32F10B262928B908007B6722 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B252928B908007B6722 /* SignInViewController.swift */; };
 		32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */; };
@@ -52,6 +55,9 @@
 		3231A23A2928B65400505D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3231A23D2928B65400505D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3231A23F2928B65400505D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323D4DDF292CF782006B730B /* CreateOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewModel.swift; sourceTree = "<group>"; };
+		323D4DE1292CF794006B730B /* CreateOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderModel.swift; sourceTree = "<group>"; };
+		323D4DE3292CF7D0006B730B /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		32C0D1932928E04A00400EA9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		32F10B252928B908007B6722 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 				32F10B302928C8FE007B6722 /* SignUpViewModel.swift */,
 				32F10B342928CD6D007B6722 /* ForgotPasswordViewModel.swift */,
 				322DB941292A0F76009F6B12 /* HomeViewModel.swift */,
+				323D4DDF292CF782006B730B /* CreateOrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,6 +153,8 @@
 				32F10B382928D3D6007B6722 /* UserData.swift */,
 				322DB93F292A0762009F6B12 /* OrderCell.swift */,
 				322DB943292A0F9A009F6B12 /* HomeModel.swift */,
+				323D4DE1292CF794006B730B /* CreateOrderModel.swift */,
+				323D4DE3292CF7D0006B730B /* OrderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,9 +326,11 @@
 				322DB940292A0762009F6B12 /* OrderCell.swift in Sources */,
 				3231A2322928B65400505D05 /* AppDelegate.swift in Sources */,
 				32F10B312928C8FE007B6722 /* SignUpViewModel.swift in Sources */,
+				323D4DE0292CF782006B730B /* CreateOrderViewModel.swift in Sources */,
 				322DB9352929F9E2009F6B12 /* HistoryViewController.swift in Sources */,
 				32F10B372928CDAA007B6722 /* ForgotPasswordModel.swift in Sources */,
 				322DB93B2929FA2A009F6B12 /* ContactsViewController.swift in Sources */,
+				323D4DE2292CF794006B730B /* CreateOrderModel.swift in Sources */,
 				32F10B332928C917007B6722 /* SignUpModel.swift in Sources */,
 				322DB9332929F9CE009F6B12 /* HomeViewController.swift in Sources */,
 				32F10B2C2928C41B007B6722 /* SignInViewModel.swift in Sources */,
@@ -331,6 +342,7 @@
 				322DB942292A0F76009F6B12 /* HomeViewModel.swift in Sources */,
 				32F10B352928CD6D007B6722 /* ForgotPasswordViewModel.swift in Sources */,
 				3231A2342928B65400505D05 /* SceneDelegate.swift in Sources */,
+				323D4DE4292CF7D0006B730B /* OrderModel.swift in Sources */,
 				32F10B262928B908007B6722 /* SignInViewController.swift in Sources */,
 				32F10B2A2928C3C7007B6722 /* SignUpViewController.swift in Sources */,
 			);

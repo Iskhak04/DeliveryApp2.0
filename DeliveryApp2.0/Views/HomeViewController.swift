@@ -97,7 +97,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ordersTableView.dequeueReusableCell(withIdentifier: "OrderCell", for: indexPath) as! OrderCell
         cell.orderNameLabel.text = ordersV[indexPath.row].name
-        cell.destinationLabel.text = "\(String(describing: ordersV[indexPath.row].from)) <-> \(String(describing: ordersV[indexPath.row].toWhere))"
+        cell.destinationLabel.text = "\(ordersV[indexPath.row].from!) <-> \(ordersV[indexPath.row].toWhere!)"
         return cell
     }
     
