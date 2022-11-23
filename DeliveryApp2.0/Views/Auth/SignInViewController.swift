@@ -138,10 +138,11 @@ class SignInViewController: UIViewController {
     @objc func signInButtonClicked() {
         guard let email = emailTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty else { return }
         
-        viewModel.statusVM.subscribe(onNext: {
+        viewModel.statusVM.subscribe(onNext: { [weak self] in
             if $0 == true {
                 let mainTabBarC = MainTabBarController()
-                self.navigationController?.viewControllers.append(mainTabBarC)
+                mainTabBarC.modalPresentationStyle = .fullScreen
+                self?.present(mainTabBarC, animated: true)
             }
         }).disposed(by: bag)
         
