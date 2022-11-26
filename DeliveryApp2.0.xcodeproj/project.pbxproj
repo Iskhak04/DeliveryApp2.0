@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1184C91716FEA8A266A8B2C1 /* Pods_DeliveryApp2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1267F54E7EF48C44A6ABF75 /* Pods_DeliveryApp2_0.framework */; };
+		320094442931EC85006C38E7 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320094432931EC85006C38E7 /* ContactsViewModel.swift */; };
+		320094462931ECBD006C38E7 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320094452931ECBD006C38E7 /* ContactsModel.swift */; };
 		322DB9332929F9CE009F6B12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9322929F9CE009F6B12 /* HomeViewController.swift */; };
 		322DB9352929F9E2009F6B12 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9342929F9E2009F6B12 /* HistoryViewController.swift */; };
 		322DB9372929F9F0009F6B12 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB9362929F9F0009F6B12 /* CreateOrderViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		320094432931EC85006C38E7 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		320094452931ECBD006C38E7 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		322DB9322929F9CE009F6B12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		322DB9342929F9E2009F6B12 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		322DB9362929F9F0009F6B12 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				32F10B342928CD6D007B6722 /* ForgotPasswordViewModel.swift */,
 				322DB941292A0F76009F6B12 /* HomeViewModel.swift */,
 				323D4DDF292CF782006B730B /* CreateOrderViewModel.swift */,
+				320094432931EC85006C38E7 /* ContactsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				322DB943292A0F9A009F6B12 /* HomeModel.swift */,
 				323D4DE1292CF794006B730B /* CreateOrderModel.swift */,
 				323D4DE3292CF7D0006B730B /* OrderModel.swift */,
+				320094452931ECBD006C38E7 /* ContactsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -330,7 +336,9 @@
 				322DB9352929F9E2009F6B12 /* HistoryViewController.swift in Sources */,
 				32F10B372928CDAA007B6722 /* ForgotPasswordModel.swift in Sources */,
 				322DB93B2929FA2A009F6B12 /* ContactsViewController.swift in Sources */,
+				320094462931ECBD006C38E7 /* ContactsModel.swift in Sources */,
 				323D4DE2292CF794006B730B /* CreateOrderModel.swift in Sources */,
+				320094442931EC85006C38E7 /* ContactsViewModel.swift in Sources */,
 				32F10B332928C917007B6722 /* SignUpModel.swift in Sources */,
 				322DB9332929F9CE009F6B12 /* HomeViewController.swift in Sources */,
 				32F10B2C2928C41B007B6722 /* SignInViewModel.swift in Sources */,
