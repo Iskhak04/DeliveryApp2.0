@@ -10,5 +10,6 @@ target 'DeliveryApp2.0' do
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'KeychainSwift'
+	pod 'FirebaseInAppMessaging'
 
 end

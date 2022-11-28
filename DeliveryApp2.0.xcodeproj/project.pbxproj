@@ -27,6 +27,7 @@
 		323D4DE0292CF782006B730B /* CreateOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D4DDF292CF782006B730B /* CreateOrderViewModel.swift */; };
 		323D4DE2292CF794006B730B /* CreateOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D4DE1292CF794006B730B /* CreateOrderModel.swift */; };
 		323D4DE4292CF7D0006B730B /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D4DE3292CF7D0006B730B /* OrderModel.swift */; };
+		328899D229334C94001ABFB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 328899D129334C94001ABFB7 /* GoogleService-Info.plist */; };
 		32C0D1942928E04B00400EA9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0D1932928E04A00400EA9 /* MainTabBarController.swift */; };
 		32F10B262928B908007B6722 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B252928B908007B6722 /* SignInViewController.swift */; };
 		32F10B282928C3BC007B6722 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */; };
@@ -62,6 +63,7 @@
 		323D4DDF292CF782006B730B /* CreateOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewModel.swift; sourceTree = "<group>"; };
 		323D4DE1292CF794006B730B /* CreateOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderModel.swift; sourceTree = "<group>"; };
 		323D4DE3292CF7D0006B730B /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		328899D129334C94001ABFB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32C0D1932928E04A00400EA9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		32F10B252928B908007B6722 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		32F10B272928C3BC007B6722 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				32F10B202928B8CC007B6722 /* ViewModels */,
 				3231A23F2928B65400505D05 /* Info.plist */,
 				322DB93C292A007D009F6B12 /* OrderDB.xcdatamodeld */,
+				328899D129334C94001ABFB7 /* GoogleService-Info.plist */,
 			);
 			path = DeliveryApp2.0;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				3231A22B2928B65400505D05 /* Frameworks */,
 				3231A22C2928B65400505D05 /* Resources */,
 				E02E0C7B570E9ABFAD81E64B /* [CP] Embed Pods Frameworks */,
+				647DE492A485FF64F1474B8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3231A23E2928B65400505D05 /* LaunchScreen.storyboard in Resources */,
+				328899D229334C94001ABFB7 /* GoogleService-Info.plist in Resources */,
 				3231A23B2928B65400505D05 /* Assets.xcassets in Resources */,
 				3231A2392928B65400505D05 /* Main.storyboard in Resources */,
 			);
@@ -280,6 +285,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		647DE492A485FF64F1474B8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeliveryApp2.0/Pods-DeliveryApp2.0-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeliveryApp2.0/Pods-DeliveryApp2.0-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeliveryApp2.0/Pods-DeliveryApp2.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9E4A8F2B56E1B4D3B87CE57F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
