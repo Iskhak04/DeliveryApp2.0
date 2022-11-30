@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
@@ -133,7 +134,11 @@ class SignUpViewController: UIViewController {
         
         viewModel.userDataVM.onNext((email, password))
         
-        showAlert()
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            guard let _ = result, error == nil else { return }
+            
+            self.showAlert()
+        }
     }
     
     private func showAlert() {
