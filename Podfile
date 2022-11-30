@@ -11,5 +11,7 @@ target 'DeliveryApp2.0' do
 	pod 'RxCocoa'
 	pod 'KeychainSwift'
 	pod 'FirebaseInAppMessaging'
+	pod 'FirebaseAuth'
+	pod 'FirebaseDatabase'
 
 end
