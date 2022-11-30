@@ -175,6 +175,8 @@ class SignUpViewController: UIViewController {
                 
                 self.showAlert()
             }
+            
+            DatabaseManager.shared.addNewUser(email: email, name: name)
         }
     }
     

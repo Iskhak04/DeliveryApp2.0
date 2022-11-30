@@ -20,8 +20,15 @@ final class DatabaseManager {
 
 extension DatabaseManager {
     
+    public func safeEmail(email: String) -> String {
+        var safeEmail = email.replacingOccurrences(of: ".", with: "-")
+        
+        return safeEmail
+    }
+    
     public func userExists(email: String, completion: @escaping ((Bool) -> Void)) {
-        database.child(email).observeSingleEvent(of: .value) { snapshot in
+        
+        database.child(safeEmail(email: email)).observeSingleEvent(of: .value) { snapshot in
             guard snapshot.value as? String != nil else {
                 completion(false)
                 return
@@ -32,6 +39,6 @@ extension DatabaseManager {
     }
     
     public func addNewUser(email: String, name: String) {
-        database.child(email).setValue(["first_name": name])
+        database.child(safeEmail(email: email)).setValue(["first_name": name])
     }
 }
