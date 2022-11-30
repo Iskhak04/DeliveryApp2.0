@@ -113,13 +113,13 @@
 		3231A2302928B65400505D05 /* DeliveryApp2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				328899D129334C94001ABFB7 /* GoogleService-Info.plist */,
 				32F10B232928B8DF007B6722 /* Other */,
 				32F10B222928B8D8007B6722 /* Models */,
 				32F10B212928B8D3007B6722 /* Views */,
 				32F10B202928B8CC007B6722 /* ViewModels */,
 				3231A23F2928B65400505D05 /* Info.plist */,
 				322DB93C292A007D009F6B12 /* OrderDB.xcdatamodeld */,
-				328899D129334C94001ABFB7 /* GoogleService-Info.plist */,
 			);
 			path = DeliveryApp2.0;
 			sourceTree = "<group>";
@@ -233,6 +233,8 @@
 			dependencies = (
 			);
 			name = DeliveryApp2.0;
+			packageProductDependencies = (
+			);
 			productName = DeliveryApp2.0;
 			productReference = 3231A22E2928B65400505D05 /* DeliveryApp2.0.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 3231A2252928B65400505D05;
+			packageReferences = (
+				32F4F2332934AC0500B0D57B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3231A22F2928B65400505D05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -523,6 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 962338348U;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeliveryApp2.0/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -552,6 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 962338348U;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeliveryApp2.0/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -594,6 +601,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32F4F2332934AC0500B0D57B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		322DB93C292A007D009F6B12 /* OrderDB.xcdatamodeld */ = {
