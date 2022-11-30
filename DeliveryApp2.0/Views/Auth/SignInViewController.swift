@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
     
@@ -138,15 +139,23 @@ class SignInViewController: UIViewController {
     @objc func signInButtonClicked() {
         guard let email = emailTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty else { return }
         
-        viewModel.statusVM.subscribe(onNext: { [weak self] in
-            if $0 == true {
-                let mainTabBarC = MainTabBarController()
-                mainTabBarC.modalPresentationStyle = .fullScreen
-                self?.present(mainTabBarC, animated: true)
-            }
-        }).disposed(by: bag)
+//        viewModel.statusVM.subscribe(onNext: { [weak self] in
+//            if $0 == true {
+//                let mainTabBarC = MainTabBarController()
+//                mainTabBarC.modalPresentationStyle = .fullScreen
+//                self?.present(mainTabBarC, animated: true)
+//            }
+//        }).disposed(by: bag)
+//
+//        viewModel.userDataVM.onNext((email, password))
         
-        viewModel.userDataVM.onNext((email, password))
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            guard let _ = result, error == nil else { return }
+            
+            let mainTabBarC = MainTabBarController()
+            mainTabBarC.modalPresentationStyle = .fullScreen
+            self.present(mainTabBarC, animated: true)
+        }
         
     }
     
