@@ -19,6 +19,36 @@ class SignUpViewController: UIViewController {
         return view
     }()
     
+    //MARK: Name
+    private lazy var nameBackgroundView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.layer.cornerRadius = 27
+        return view
+    }()
+    
+    private lazy var nameWhiteView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemBackground
+        view.layer.cornerRadius = 25
+        return view
+    }()
+    
+    private lazy var nameImageView: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(systemName: "person", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .medium, scale: .large))
+        view.tintColor = .lightGray
+        return view
+    }()
+    
+    private lazy var nameTextField: UITextField = {
+        let view = UITextField()
+        view.placeholder = "Name"
+        view.autocorrectionType = .no
+        view.autocapitalizationType = .none
+        return view
+    }()
+    
     //MARK: Email
     private lazy var emailBackgroundView: UIView = {
         let view = UIView()
@@ -130,14 +160,21 @@ class SignUpViewController: UIViewController {
     }
     
     @objc func signUpButtonClicked() {
-        guard let email = emailTextField.text, let password = passwordTextField.text, let password2 = password2TextField.text, !email.isEmpty, !password.isEmpty, password == password2 else { return }
+        guard let email = emailTextField.text, let password = passwordTextField.text, let password2 = password2TextField.text, !email.isEmpty, !password.isEmpty, password == password2, let name = nameTextField.text, !name.isEmpty else { return }
         
         viewModel.userDataVM.onNext((email, password))
         
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            guard let _ = result, error == nil else { return }
+        DatabaseManager.shared.userExists(email: email) { exists in
+            guard !exists else {
+                //user exists
+                return
+            }
             
-            self.showAlert()
+            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                guard let _ = result, error == nil else { return }
+                
+                self.showAlert()
+            }
         }
     }
     
@@ -158,10 +195,39 @@ class SignUpViewController: UIViewController {
             make.centerX.equalTo(view.snp.centerX).offset(0)
         }
         
+        //Name
+        view.addSubview(nameBackgroundView)
+        nameBackgroundView.snp.makeConstraints { make in
+            make.top.equalTo(signUpLabel.snp.bottom).offset(20)
+            make.centerX.equalTo(view.snp.centerX).offset(0)
+            make.height.equalTo(BGViewHeight)
+            make.width.equalTo(BGViewWidth)
+        }
+        
+        nameBackgroundView.addSubview(nameWhiteView)
+        nameWhiteView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.equalTo(BGViewWidth - 4)
+            make.height.equalTo(BGViewHeight - 4)
+        }
+        
+        nameWhiteView.addSubview(nameImageView)
+        nameImageView.snp.makeConstraints { make in
+            make.centerY.equalTo(nameWhiteView.snp.centerY).offset(0)
+            make.left.equalTo(nameWhiteView.snp.left).offset(20)
+        }
+        
+        nameWhiteView.addSubview(nameTextField)
+        nameTextField.snp.makeConstraints { make in
+            make.centerY.equalTo(nameWhiteView.snp.centerY).offset(0)
+            make.left.equalTo(nameImageView.snp.right).offset(15)
+            make.right.equalTo(nameWhiteView.snp.right).offset(-20)
+        }
+        
         //Email
         view.addSubview(emailBackgroundView)
         emailBackgroundView.snp.makeConstraints { make in
-            make.top.equalTo(signUpLabel.snp.bottom).offset(20)
+            make.top.equalTo(nameBackgroundView.snp.bottom).offset(30)
             make.centerX.equalTo(view.snp.centerX).offset(0)
             make.height.equalTo(BGViewHeight)
             make.width.equalTo(BGViewWidth)
